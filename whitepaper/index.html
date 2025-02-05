@@ -8,10 +8,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
 
   <style>
     /* GLOBAL RESET & BASE */
@@ -21,20 +18,15 @@
       box-sizing: border-box;
     }
 
-    /* Remove default print margins */
-    @page {
-      margin: 0;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
+    /* Set full-page background */
+    html, body {
+      min-height: 100vh;
       background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed;
       background-size: cover;
       color: #f1f1f1;
-      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
       line-height: 1.6;
       padding: 20px;
-      /* Allow natural scrolling while trying to contain overscroll */
       overscroll-behavior: contain;
       overflow-x: hidden;
     }
@@ -45,7 +37,7 @@
       padding: 40px 20px;
       background: rgba(0, 0, 0, 0.5);
       border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     header {
@@ -57,7 +49,7 @@
       font-weight: 700;
       color: #f1f1f1;
       margin-bottom: 8px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     header p.version {
       font-weight: 300;
@@ -70,7 +62,7 @@
       padding: 25px;
       background: rgba(255, 255, 255, 0.05);
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
     section h2 {
       font-size: 1.8rem;
@@ -112,20 +104,21 @@
       background: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       padding: 15px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
     }
     .col h3 {
       font-size: 1rem;
       font-weight: 600;
       color: gold;
       margin-bottom: 8px;
-      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
     .footer {
       text-align: center;
       font-size: 0.9rem;
       color: #ccc;
       margin-top: 20px;
+      background: transparent;
     }
     a {
       color: gold;
@@ -134,6 +127,32 @@
     }
     a:hover {
       text-decoration: underline;
+    }
+
+    /* Print-specific adjustments to force background and remove white borders */
+    @media print {
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed !important;
+        background-size: cover !important;
+      }
+      .wrapper {
+        margin: 0 !important;
+        padding: 20px !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+      }
+      .footer {
+        margin-top: 0 !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        padding-bottom: 20px;
+      }
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
     }
   </style>
 </head>
@@ -149,7 +168,7 @@
     <section id="introduction">
       <h2>Introduction</h2>
       <p>
-        $GRATE is more than just a meme token; it's a movement. Built on the Solana blockchain and launched through Pump.fun, $GRATE is designed to foster a community-driven ecosystem focused on engagement and growth. We make no promises regarding additional utilities, NFTs, or extra features beyond the token itself.
+        $GRATE is more than just a meme token; it's a movement. Built on the Solana blockchain and launched via Pump.fun, $GRATE is designed to foster a community-driven ecosystem focused on engagement and growth. We make no promises regarding additional utilities, NFTs, or extra features beyond the token itself.
       </p>
     </section>
 
@@ -198,7 +217,7 @@
     <section id="vision">
       <h2>Vision & Purpose</h2>
       <p>
-        Our vision is to build a fair, community-driven token ecosystem that evolves with time. While we focus on balanced token distribution and market stability, no additional utilities, NFTs, or extra benefits are guaranteed. We are optimistic about growth—our long-term milestones begin with an initial market cap target of 1M, then scaling through higher thresholds, with the ultimate aspirational goal of reaching up to 1B. These targets are flexible and meant to inspire continued progress.
+        Our vision is to build a fair, community-driven token ecosystem that evolves over time. While we focus on balanced token distribution and market stability, we are fully committed to rewarding our community. A portion of funds will be allocated for strategic partnerships, marketing, and community growth initiatives. Our milestones are aspirational—beginning with modest targets and scaling upward as momentum builds.
       </p>
     </section>
 
@@ -216,8 +235,8 @@
       <ul>
         <li>Liquidity will be locked permanently to support price stability</li>
         <li>Unbonded tokens will be burned to help reduce inflation</li>
-        <li>Community engagement initiatives may follow bonding</li>
-        <li>Potential giveaways will be considered after bonding based on favorable market performance</li>
+        <li>Community engagement initiatives will follow bonding</li>
+        <li>Giveaways will be implemented post-bonding based on favorable market performance</li>
       </ul>
     </section>
 
@@ -225,7 +244,7 @@
     <section id="giveaways">
       <h2>Giveaway Structure & Milestones</h2>
       <p>
-        After bonding—and subject to positive market conditions—community rewards may be implemented. Our approach is to reward early and continued support with scalable rewards. For example, an initial community reward may trigger at a modest market cap milestone (around the low tens of thousands), further rewards may follow at a slightly higher milestone (around 100K), and as the market cap grows, additional and more significant rewards could be introduced. These initiatives are aspirational and will evolve as the project grows.
+        We are dedicated to rewarding our community. As the market grows, we will implement ongoing giveaways and rewards that reflect the level of support and success achieved—without locking in fixed numbers. Early rewards will be introduced as soon as market momentum is positive, with further initiatives evolving as the project grows.
       </p>
     </section>
 
@@ -234,9 +253,9 @@
       <h2>Post-Bonding Token Management</h2>
       <ul>
         <li><strong>Developer Holdings:</strong> 215M $GRATE (Pre-Bonding)</li>
-        <li><strong>Marketing & Partnerships:</strong> A flexible allocation to drive adoption and exposure</li>
-        <li><strong>Community Engagement:</strong> Funds may be set aside for potential rewards after bonding</li>
-        <li><strong>Market Stability & Liquidity:</strong> Resources will be maintained to support healthy trading and growth</li>
+        <li><strong>Marketing & Partnerships:</strong> A portion of funds will be allocated to secure strategic partnerships, marketing, and community growth</li>
+        <li><strong>Community Engagement:</strong> Additional resources will be set aside to reward and support our community after bonding</li>
+        <li><strong>Market Stability & Liquidity:</strong> Resources will be maintained to support healthy trading and further growth</li>
       </ul>
     </section>
 
@@ -245,8 +264,8 @@
       <h2>Security & Sustainability</h2>
       <ul>
         <li><strong>Liquidity Locking:</strong> Bonding on Raydium ensures a secure liquidity pool.</li>
-        <li><strong>Transparent Allocation:</strong> The team commits to clear, open stewardship of token allocation.</li>
-        <li><strong>Community Governance:</strong> Holders will have a say in how funds are spent to grow $GRATE, ensuring that decisions benefit the entire community.</li>
+        <li><strong>Transparent Allocation:</strong> Our team is committed to clear and open stewardship of token allocation.</li>
+        <li><strong>Community Governance:</strong> Holders will have a say in how funds are spent to grow $GRATE, ensuring decisions benefit the entire community.</li>
       </ul>
     </section>
 
@@ -264,10 +283,10 @@
     <section id="conclusion">
       <h2>Conclusion</h2>
       <p>
-        $GRATE is a community-first, incentive-driven token. We are committed to building a sustainable and fair token ecosystem driven by community engagement and market stability. However, no additional utilities, NFTs, or extra benefits are promised beyond the token itself. Our milestones—from an initial 1M market cap target, scaling upward, with the ultimate aspirational goal of reaching 1B—are flexible and subject to market conditions.
+        $GRATE is a community-first, incentive-driven token. We are dedicated to building a sustainable, fair token ecosystem driven by community engagement and market stability. While no additional utilities, NFTs, or extra benefits are guaranteed beyond the token itself, we will continuously reward our supporters and reinvest in partnerships, marketing, and community growth. Our milestones—starting modestly and scaling upward—are aspirational and flexible, reflecting our commitment to progress.
       </p>
       <p>
-        The future of $GRATE is in the hands of its holders—together, we make it thrive.
+        The future of $GRATE is in the hands of its holders—together, we will make it thrive.
       </p>
       <p>
         🚀 Follow us on <a href="https://x.com/GrateToken" target="_blank">X</a> | 🌐 Visit our <a href="https://gratetoken.com" target="_blank">Website</a>
