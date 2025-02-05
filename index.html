@@ -43,7 +43,7 @@
       margin-bottom: 40px;
     }
     header h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
       color: #f1f1f1;
       margin-bottom: 12px;
@@ -85,13 +85,13 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
     section h2 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 600;
       color: #fff;
       margin-bottom: 15px;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
     }
     section p, section li {
       font-weight: 300;
@@ -99,10 +99,16 @@
       color: #ddd;
       margin-bottom: 10px;
     }
+
     ul {
-      list-style: inside disc;
-      padding-left: 1em;
-      margin-top: 10px;
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
     }
 
     /* TOKEN INFO WRAPPER */
@@ -140,32 +146,21 @@
       overflow-wrap: break-word;
     }
 
-    /* HORIZONTAL LINE STYLE */
-    .hr-line {
-      width: 50%;
-      margin: 10px auto 15px auto;
-      border: none;
-      border-top: 1px solid rgba(255, 255, 255, 0.4);
+    .info-card p.truncated {
+      cursor: pointer;
     }
 
-    /* WHITEPAPER BUTTON */
-    .button-row {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .btn {
-      background: gold;
-      color: #111;
-      text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      display: inline-block;
-      transition: 0.3s;
-      margin: 5px;
-    }
-    .btn:hover {
-      background: #fff;
+    .info-card p.truncated:hover::after {
+      content: attr(title);
+      position: absolute;
+      background: #333;
+      color: white;
+      padding: 5px 8px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      top: 100%;
+      left: 50%;
+      transform: translate(-50%, 10px);
     }
 
     /* LINKS LIST (CENTERED, HORIZONTAL) */
@@ -173,7 +168,7 @@
       display: flex;              /* horizontal layout */
       justify-content: center;    /* center horizontally */
       align-items: center;        /* center vertically */
-      gap: 2rem;                  /* space between items */
+      gap: 3rem;                  /* space between items */
       list-style-type: none;      /* remove bullet points */
       margin: 0;
       padding: 0;
@@ -199,9 +194,8 @@
 
     /* LINK LOGO SIZING */
     .link-logo {
-      width: 24px;
-      height: 24px;
-      border-radius: 4px;
+      width: 36px;
+      height: 36px;
     }
 
     /* FOOTER */
@@ -223,7 +217,10 @@
       <p>The Community-Driven Meme Token</p>
       <p>
         Follow us for the latest news:
-        <a href="https://x.com/GrateToken" target="_blank">@GrateToken</a>
+        <a href="https://x.com/GrateToken" target="_blank">
+          <img src="images/x_logo.png" alt="X Logo" style="width: 16px; vertical-align: middle; margin-right: 5px;" />
+          @GrateToken
+        </a>
       </p>
     </header>
 
@@ -257,8 +254,9 @@
         </div>
         <div class="info-card">
           <h3>Contract</h3>
-          <hr class="hr-line" />
-          <p>FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump</p>
+          <p class="truncated" title="FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump">
+            FKVYQSkLd...
+          </p>
         </div>
         <div class="info-card">
           <h3>Total Supply</h3>
@@ -267,18 +265,18 @@
       </div>
     </section>
 
-    <!-- ROADMAP (ALREADY LAUNCHED) -->
+    <!-- ROADMAP -->
     <section>
       <h2>Roadmap</h2>
       <ul>
-        <li><strong>Launched Successfully</strong></li>
-        <li>Community Building & Social Engagement</li>
-        <li>Listings & Strategic Partnerships</li>
-        <li>Long-Term Utility & Ecosystem Growth</li>
+        <li>🚀 <strong>Launched Successfully</strong></li>
+        <li>🌐 Community Building & Social Engagement</li>
+        <li>📈 Listings & Strategic Partnerships</li>
+        <li>🔒 Long-Term Utility & Ecosystem Growth</li>
       </ul>
     </section>
 
-    <!-- IMPORTANT LINKS -->
+    <!-- TRACK & TRADE -->
     <section>
       <h2>Track & Trade</h2>
       <p>Monitor $GRATE on these platforms for real-time data and trading:</p>
@@ -312,7 +310,7 @@
       </ul>
     </section>
 
-    <!-- WHITEPAPER (Download) -->
+    <!-- WHITEPAPER -->
     <section>
       <h2>Whitepaper</h2>
       <p>
@@ -320,7 +318,6 @@
         whitepaper, detailing how $GRATE plans to revolutionize meme-token culture.
       </p>
       <div class="button-row">
-        <!-- Link to your PDF or "Coming Soon" until it's available -->
         <a href="whitepaper.pdf" target="_blank" class="btn">
           Download Whitepaper
         </a>
