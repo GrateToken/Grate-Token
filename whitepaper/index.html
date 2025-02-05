@@ -20,6 +20,12 @@
       padding: 0;
       box-sizing: border-box;
     }
+
+    /* Remove default print margins */
+    @page {
+      margin: 0;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed;
@@ -28,9 +34,11 @@
       min-height: 100vh;
       line-height: 1.6;
       padding: 20px;
-      /* Allow natural scrolling while containing overscroll */
+      /* Allow natural scrolling while trying to contain overscroll */
       overscroll-behavior: contain;
+      overflow-x: hidden;
     }
+
     .wrapper {
       max-width: 900px;
       margin: 0 auto;
@@ -39,6 +47,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
+
     header {
       text-align: center;
       margin-bottom: 40px;
@@ -55,6 +64,7 @@
       font-size: 1rem;
       color: #ddd;
     }
+
     section {
       margin-bottom: 35px;
       padding: 25px;
@@ -129,7 +139,6 @@
 </head>
 <body>
   <div class="wrapper">
-
     <!-- HEADER -->
     <header>
       <h1>$GRATE Whitepaper</h1>
@@ -189,7 +198,7 @@
     <section id="vision">
       <h2>Vision & Purpose</h2>
       <p>
-        Our vision is to build a fair, community-driven token ecosystem that grows over time. While we focus on equitable token distribution and market stability, no additional utilities, NFTs, or extra benefits are guaranteed. Our long-term plan envisions a progression—from an initial market cap goal of 1M, scaling through 10M and 100M, and potentially up to 1B. These targets are aspirational and subject to market conditions.
+        Our vision is to build a fair, community-driven token ecosystem that evolves with time. While we focus on balanced token distribution and market stability, no additional utilities, NFTs, or extra benefits are guaranteed. We are optimistic about growth—our long-term milestones begin with an initial market cap target of 1M, then scaling through higher thresholds, with the ultimate aspirational goal of reaching up to 1B. These targets are flexible and meant to inspire continued progress.
       </p>
     </section>
 
@@ -199,16 +208,16 @@
       <p><strong>Phase 1: Pre-Bonding (Current)</strong></p>
       <ul>
         <li>Deployment on Solana via Pump.fun</li>
-        <li>Initial community building on X & Telegram</li>
+        <li>Community building on X & Telegram</li>
         <li>Early buy-ins and organic growth</li>
-        <li>Liquidity pool expansion towards bonding</li>
+        <li>Expansion of the liquidity pool toward bonding</li>
       </ul>
       <p><strong>Phase 2: Bonding to Raydium (Upcoming)</strong></p>
       <ul>
         <li>Liquidity will be locked permanently to support price stability</li>
-        <li>Unbonded tokens will be burned to reduce inflation</li>
-        <li>Community engagement initiatives may be introduced post-bonding</li>
-        <li>Potential giveaways will be considered after bonding based on market performance</li>
+        <li>Unbonded tokens will be burned to help reduce inflation</li>
+        <li>Community engagement initiatives may follow bonding</li>
+        <li>Potential giveaways will be considered after bonding based on favorable market performance</li>
       </ul>
     </section>
 
@@ -216,25 +225,8 @@
     <section id="giveaways">
       <h2>Giveaway Structure & Milestones</h2>
       <p>
-        After bonding—and subject to market conditions—community rewards may be implemented. The following milestones outline potential reward triggers:
+        After bonding—and subject to positive market conditions—community rewards may be implemented. Our approach is to reward early and continued support with scalable rewards. For example, an initial community reward may trigger at a modest market cap milestone (around the low tens of thousands), further rewards may follow at a slightly higher milestone (around 100K), and as the market cap grows, additional and more significant rewards could be introduced. These initiatives are aspirational and will evolve as the project grows.
       </p>
-      <ul>
-        <li><strong>85K MC Milestone:</strong>
-          <ul>
-            <li>An initial giveaway may be triggered upon reaching approximately an 85K market cap.</li>
-          </ul>
-        </li>
-        <li><strong>100K MC Milestone:</strong>
-          <ul>
-            <li>Additional community rewards may be distributed at the 100K market cap level.</li>
-          </ul>
-        </li>
-        <li><strong>Up to 1B MC Milestone:</strong>
-          <ul>
-            <li>As the market cap grows toward 1 billion, further giveaways and rewards may be introduced.</li>
-          </ul>
-        </li>
-      </ul>
     </section>
 
     <!-- POST-BONDING TOKEN MANAGEMENT -->
@@ -242,9 +234,9 @@
       <h2>Post-Bonding Token Management</h2>
       <ul>
         <li><strong>Developer Holdings:</strong> 215M $GRATE (Pre-Bonding)</li>
-        <li><strong>Marketing & Partnerships:</strong> 50M for driving adoption and exposure</li>
-        <li><strong>Community Engagement:</strong> 50M may be allocated for potential rewards (post-bonding)</li>
-        <li><strong>Market Stability & Liquidity Support:</strong> 65M to help maintain healthy trading activity and price stability</li>
+        <li><strong>Marketing & Partnerships:</strong> A flexible allocation to drive adoption and exposure</li>
+        <li><strong>Community Engagement:</strong> Funds may be set aside for potential rewards after bonding</li>
+        <li><strong>Market Stability & Liquidity:</strong> Resources will be maintained to support healthy trading and growth</li>
       </ul>
     </section>
 
@@ -253,8 +245,8 @@
       <h2>Security & Sustainability</h2>
       <ul>
         <li><strong>Liquidity Locking:</strong> Bonding on Raydium ensures a secure liquidity pool.</li>
-        <li><strong>Transparent Allocation:</strong> The team commits to clear, open token allocation and stewardship.</li>
-        <li><strong>Community Governance:</strong> Holders will have a say in how funds are spent to grow $GRATE, provided this principle is maintained for all coin holders.</li>
+        <li><strong>Transparent Allocation:</strong> The team commits to clear, open stewardship of token allocation.</li>
+        <li><strong>Community Governance:</strong> Holders will have a say in how funds are spent to grow $GRATE, ensuring that decisions benefit the entire community.</li>
       </ul>
     </section>
 
@@ -272,7 +264,7 @@
     <section id="conclusion">
       <h2>Conclusion</h2>
       <p>
-        $GRATE is a community-first, incentive-driven token. We are committed to building a sustainable and fair token ecosystem driven by community engagement and market stability. However, no additional utilities, NFTs, or extra benefits are promised beyond the token itself. Our milestones—from an initial 1M market cap goal, scaling through 10M and 100M, and potentially up to 1B—are aspirational and subject to market conditions.
+        $GRATE is a community-first, incentive-driven token. We are committed to building a sustainable and fair token ecosystem driven by community engagement and market stability. However, no additional utilities, NFTs, or extra benefits are promised beyond the token itself. Our milestones—from an initial 1M market cap target, scaling upward, with the ultimate aspirational goal of reaching 1B—are flexible and subject to market conditions.
       </p>
       <p>
         The future of $GRATE is in the hands of its holders—together, we make it thrive.
