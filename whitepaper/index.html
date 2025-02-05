@@ -14,20 +14,16 @@
   />
 
   <style>
-    /* GLOBAL RESET & BASE */
-    * {
+    /* Apply background and reset margin/padding on both html and body */
+    html, body {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
+      height: 100%;
       background: linear-gradient(120deg, #111 30%, #444 100%);
+      font-family: 'Poppins', sans-serif;
       color: #f1f1f1;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
     }
+
     /* Global anchor styles */
     a {
       color: gold;
@@ -37,12 +33,14 @@
     a:hover {
       text-decoration: underline;
     }
+
     .wrapper {
       max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
-      flex: 1;
+      min-height: 100vh;
     }
+
     header {
       text-align: center;
       margin-bottom: 40px;
@@ -59,6 +57,8 @@
       color: #ddd;
       font-size: 1rem;
     }
+
+    /* Navigation button (Back to Main Page) */
     .nav-button {
       display: inline-block;
       background: gold;
@@ -72,6 +72,14 @@
     .nav-button:hover {
       background: #fff;
     }
+
+    /* Hide navigation button when printing (for PDF generation) */
+    @media print {
+      .nav-button { 
+        display: none; 
+      }
+    }
+
     section {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 8px;
