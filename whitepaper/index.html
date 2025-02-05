@@ -14,7 +14,7 @@
   />
 
   <style>
-    /* Apply background and reset margin/padding on both html and body */
+    /* Global reset and base styles for html and body */
     html, body {
       margin: 0;
       padding: 0;
@@ -23,7 +23,7 @@
       font-family: 'Poppins', sans-serif;
       color: #f1f1f1;
     }
-
+    
     /* Global anchor styles */
     a {
       color: gold;
@@ -33,14 +33,14 @@
     a:hover {
       text-decoration: underline;
     }
-
+    
     .wrapper {
       max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
       min-height: 100vh;
     }
-
+    
     header {
       text-align: center;
       margin-bottom: 40px;
@@ -57,8 +57,8 @@
       color: #ddd;
       font-size: 1rem;
     }
-
-    /* Navigation button (Back to Main Page) */
+    
+    /* Back to Main Page button */
     .nav-button {
       display: inline-block;
       background: gold;
@@ -72,14 +72,7 @@
     .nav-button:hover {
       background: #fff;
     }
-
-    /* Hide navigation button when printing (for PDF generation) */
-    @media print {
-      .nav-button { 
-        display: none; 
-      }
-    }
-
+    
     section {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 8px;
@@ -109,6 +102,7 @@
       color: #ddd;
       margin-bottom: 15px;
     }
+    
     ul {
       list-style: none;
       padding-left: 20px;
@@ -125,6 +119,7 @@
       left: 0;
       color: gold;
     }
+    
     .button-row {
       text-align: center;
       margin-top: 20px;
@@ -142,34 +137,46 @@
     .btn:hover {
       background: #fff;
     }
+    
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #ccc;
       margin: 20px 0 10px;
     }
+    
+    /* Print-specific rules */
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .nav-button {
+        display: none;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <!-- Navigation: Back to Main Page -->
+    <!-- Back to Main Page button -->
     <div class="button-row" style="text-align: left;">
       <a href="/" class="nav-button">Back to Main Page</a>
     </div>
 
-    <!-- HEADER -->
+    <!-- Header -->
     <header>
       <h1>$GRATE Whitepaper</h1>
       <p>Version 1.0 - February 2025</p>
     </header>
 
-    <!-- INTRODUCTION -->
+    <!-- Introduction Section -->
     <section>
       <h2>Introduction</h2>
       <p>$GRATE is more than just a meme token; it's a movement. Built on the Solana blockchain and launched through Pump.fun, $GRATE aims to create a community-driven, high-energy ecosystem where holders benefit from engagement, longevity, and innovation. Our mission is to build a sustainable and scalable crypto project with real-world utility and long-term value beyond speculation.</p>
     </section>
 
-    <!-- TOKEN OVERVIEW -->
+    <!-- Token Overview Section -->
     <section>
       <h2>Token Overview</h2>
       <p><strong>Name:</strong> $GRATE</p>
@@ -182,13 +189,13 @@
       <p><strong>Contract Address:</strong> FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump</p>
     </section>
 
-    <!-- VISION & PURPOSE -->
+    <!-- Vision & Purpose Section -->
     <section>
       <h2>Vision & Purpose</h2>
       <p>The mission of $GRATE is to establish a strong and sustainable ecosystem that evolves with the needs of its holders. Unlike short-lived meme tokens, $GRATE is designed for long-term growth with a focus on community engagement, token distribution incentives, and market stability.</p>
     </section>
 
-    <!-- RELEASE & DISTRIBUTION SCHEDULE -->
+    <!-- Release & Distribution Schedule Section -->
     <section>
       <h2>Release & Distribution Schedule</h2>
       <h3>Phase 1: Pre-Bonding (Current)</h3>
@@ -207,7 +214,7 @@
       </ul>
     </section>
 
-    <!-- GIVEAWAY STRUCTURE -->
+    <!-- Giveaway Structure Section -->
     <section>
       <h2>Giveaway Structure (Initial Plan)</h2>
       <p>To encourage active participation and holder retention, the following giveaway structure will be implemented after bonding:</p>
@@ -244,7 +251,7 @@
       </ul>
     </section>
 
-    <!-- POST-BONDING TOKEN MANAGEMENT -->
+    <!-- Post-Bonding Token Management Section -->
     <section>
       <h2>Post-Bonding Token Management Plan</h2>
       <p><strong>Developer Holdings:</strong> 215M $GRATE (Pre-Bonding)</p>
@@ -253,7 +260,7 @@
       <p><strong>Market Stability & Liquidity Support:</strong> 65M to maintain healthy trading activity and price stability</p>
     </section>
 
-    <!-- SECURITY & SUSTAINABILITY -->
+    <!-- Security & Sustainability Section -->
     <section>
       <h2>Security & Sustainability</h2>
       <p><strong>Liquidity Locking:</strong> Bonding on Raydium ensures a safe and trustable liquidity pool.</p>
@@ -261,7 +268,7 @@
       <p><strong>Community-Centric Approach:</strong> Governance mechanisms will decentralize decision-making and project direction.</p>
     </section>
 
-    <!-- HOW TO GET INVOLVED -->
+    <!-- How to Get Involved Section -->
     <section>
       <h2>How to Get Involved</h2>
       <p><strong>Engage:</strong> Join the $GRATE community by participating in discussions and sharing your ideas.</p>
@@ -269,7 +276,7 @@
       <p><strong>Spread Awareness:</strong> Help $GRATE reach a wider audience through social media engagement and outreach.</p>
     </section>
 
-    <!-- CONCLUSION -->
+    <!-- Conclusion Section -->
     <section>
       <h2>Conclusion</h2>
       <p>$GRATE is a community-first, incentive-driven token designed to make a lasting impact in the Solana ecosystem. With structured token distribution, market stability plans, and community-driven growth, we are committed to building a long-term, sustainable token economy.</p>
@@ -277,12 +284,12 @@
       <p>🚀 Follow us on <a href="https://x.com/GrateToken" target="_blank">X</a> | 🌐 Visit our <a href="https://gratetoken.com" target="_blank">Website</a></p>
     </section>
 
-    <!-- DOWNLOAD PDF BUTTON -->
+    <!-- Download PDF Button -->
     <section class="button-row">
       <a href="whitepaper.pdf" download class="btn">Download PDF</a>
     </section>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer>
       &copy; 2025 $GRATE Token. All rights reserved.
     </footer>
