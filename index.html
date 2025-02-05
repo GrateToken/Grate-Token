@@ -178,22 +178,25 @@
     .links-list li {
       margin: 10px 0;
     }
+    /* Use inline-flex for perfect vertical alignment */
     .links-list a {
       color: gold;
       font-weight: 500;
       text-decoration: none;
       transition: color 0.3s;
+      display: inline-flex;
+      align-items: center;
+      /* You can also add gap if you prefer: gap: 8px; */
     }
     .links-list a:hover {
       color: #fff;
       text-decoration: underline;
     }
 
-    /* LINK LOGOS */
+    /* LINK LOGOS - LARGER */
     .link-logo {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
+      width: 24px; /* increased from 20px */
+      height: 24px;
       margin-right: 8px;
       border-radius: 4px;
     }
@@ -223,7 +226,6 @@
 
     <!-- GIF CONTAINER -->
     <div class="gif-container">
-      <!-- Make sure the file name and path match your 'images' folder -->
       <img src="images/grate_token.gif" alt="$GRATE Animated Logo" />
     </div>
 
@@ -283,7 +285,6 @@
             href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap"
             target="_blank"
           >
-            <!-- Pill icon for Pump.Fun -->
             <img
               src="images/pumpfun.png"
               alt="Pump.Fun Logo"
@@ -297,7 +298,6 @@
             href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd"
             target="_blank"
           >
-            <!-- Owl icon for DexScreener -->
             <img
               src="images/dexscreener.png"
               alt="DexScreener Logo"
