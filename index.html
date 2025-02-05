@@ -6,15 +6,15 @@
   <title>$GRATE Token</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
     rel="stylesheet"
   />
-  
+
   <style>
-    /* RESET & BASE */
+    /* GLOBAL RESET & BASE */
     * {
       margin: 0;
       padding: 0;
@@ -22,20 +22,20 @@
     }
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(120deg, #74EBD5 0%, #9FACE6 100%);
-      /* Feel free to replace the gradient with your own brand colors */
+      background: linear-gradient(120deg, #111 30%, #444 100%);
+      /* Dark gradient complements the gold coin GIF */
+      color: #f1f1f1;
       min-height: 100vh;
-      color: #333;
       display: flex;
       flex-direction: column;
     }
 
-    /* WRAPPER */
+    /* WRAPPER CONTAINER */
     .wrapper {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 30px 20px;
-      flex: 1; /* allows footer to sit at bottom */
+      flex: 1; /* pushes footer to bottom */
     }
 
     /* HEADER */
@@ -44,108 +44,94 @@
       margin-bottom: 30px;
     }
     header h1 {
+      font-size: 2rem;
       font-weight: 700;
-      font-size: 2.2rem;
-      color: #fff;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
-      margin-bottom: 10px;
+      color: #f1f1f1;
+      margin-bottom: 8px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
     header p {
-      font-size: 1rem;
       font-weight: 300;
-      color: #fdfdfd;
+      color: #ddd;
     }
 
-    /* GIF / EMBED SECTION */
+    /* GIF CONTAINER */
     .gif-container {
       text-align: center;
-      margin: 20px 0;
+      margin: 30px 0;
     }
     .gif-container img {
-      max-width: 300px;
+      width: 300px;
+      max-width: 90%;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-    /* If you embed the tweet, you might use an iframe or tweet script */
 
-    /* SECTION STYLES */
+    /* SECTIONS */
     section {
-      background: rgba(255, 255, 255, 0.8);
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
     section h2 {
       font-size: 1.4rem;
-      margin-bottom: 15px;
       font-weight: 600;
-      color: #444;
+      color: #fff;
+      margin-bottom: 10px;
       text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
     section p, section li {
       font-weight: 300;
       line-height: 1.6;
+      margin-bottom: 8px;
+      color: #ddd;
     }
     ul {
       list-style: inside disc;
       padding-left: 1em;
+      margin-top: 10px;
     }
 
-    /* TOKEN INFO CARDS */
+    /* TOKEN INFO */
     .token-info {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
       justify-content: center;
-      margin-top: 10px;
+      margin-top: 20px;
     }
     .info-card {
       flex: 1;
       min-width: 200px;
-      background: #fdfdfd;
+      background: rgba(255, 255, 255, 0.1);
       border-radius: 8px;
       text-align: center;
       padding: 15px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+      margin-bottom: 10px;
     }
     .info-card h3 {
-      font-size: 1rem;
-      color: #007BFF;
       margin-bottom: 5px;
-      font-weight: 500;
+      font-size: 1rem;
+      font-weight: 600;
+      color: gold;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
     .info-card p {
       font-weight: 300;
-    }
-
-    /* BUTTONS */
-    .button-row {
-      text-align: center;
-      margin-top: 20px;
-    }
-    .btn {
-      background: #007BFF;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      padding: 12px 24px;
-      font-weight: 600;
-      text-decoration: none;
-      transition: background 0.3s;
-      margin: 5px;
-      display: inline-block;
-    }
-    .btn:hover {
-      background: #0056b3;
+      color: #eee;
     }
 
     /* FOOTER */
     footer {
       text-align: center;
-      padding: 10px 0;
       font-size: 0.9rem;
-      color: #fff;
+      color: #ccc;
+      margin: 20px 0 10px;
     }
   </style>
 </head>
@@ -155,40 +141,26 @@
     <!-- HEADER -->
     <header>
       <h1>$GRATE Token</h1>
-      <p>The community-driven meme token you’ve been waiting for</p>
+      <p>The Community-Driven Meme Token</p>
     </header>
 
-    <!-- GIF or EMBED SECTION -->
+    <!-- GIF SECTION -->
     <div class="gif-container">
-      <!-- Option 1: Link to your tweet (no direct GIF) -->
-      <!-- <a href="https://x.com/i/status/1886230768088948942" target="_blank" class="btn">Watch Our GIF</a> -->
-
-      <!-- Option 2: Directly embed an image or GIF if you have a .gif file link -->
-      <img 
-        src="images/fun_animation.gif" 
-        alt="GRATE Meme GIF"
-      />
-      
-      <!-- Option 3: Embed a Tweet (requires Twitter embed script) -->
-      <!-- 
-        <blockquote class="twitter-tweet">
-          <a href="https://x.com/i/status/1886230768088948942"></a>
-        </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      -->
+      <!-- Make sure this file name matches exactly what's in your images folder -->
+      <img src="images/grat_token.gif" alt="$GRATE Animated Logo" />
     </div>
 
     <!-- ABOUT SECTION -->
     <section>
       <h2>About $GRATE</h2>
       <p>
-        $GRATE is a meme-driven project aimed at redefining community engagement 
-        in the crypto space. Our goal is to unite supporters with a fun, 
-        interactive token while paving the way for future growth.
+        $GRATE is a meme-driven project focused on uniting the crypto community
+        with a fun and accessible token. Join us on our journey to revolutionize
+        the way people engage with digital assets.
       </p>
     </section>
 
-    <!-- TOKEN INFO -->
+    <!-- TOKEN INFO SECTION -->
     <section>
       <h2>Token Info</h2>
       <div class="token-info">
@@ -207,29 +179,15 @@
       </div>
     </section>
 
-    <!-- ROADMAP -->
+    <!-- ROADMAP SECTION -->
     <section>
       <h2>Roadmap</h2>
       <ul>
-        <li>Token Launch & Initial Distribution</li>
-        <li>Community Building & Social Media Engagement</li>
+        <li>Launch & Initial Distribution</li>
+        <li>Community Building & Marketing</li>
         <li>Exchange Listings & Partnerships</li>
-        <li>Additional Utility & Future Integrations</li>
+        <li>Future Utility & Ecosystem Expansion</li>
       </ul>
-    </section>
-
-    <!-- WHITEPAPER & CTA -->
-    <section>
-      <h2>Whitepaper</h2>
-      <p>
-        Dive deeper into our project’s technical details and long-term vision. 
-        Download the whitepaper below:
-      </p>
-      <div class="button-row">
-        <!-- Replace "whitepaper.pdf" with your actual PDF link or "Coming Soon" -->
-        <a href="whitepaper.pdf" class="btn" target="_blank">Download Whitepaper</a>
-        <a href="https://x.com/GrateToken" target="_blank" class="btn">Follow Us on X</a>
-      </div>
     </section>
 
   </div>
