@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>$GRATE Token</title>
-
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,31 +12,41 @@
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
     rel="stylesheet"
   />
-
+  
   <style>
-    /* GLOBAL RESET & BASE */
+    /* GLOBAL RESET */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(120deg, #111 30%, #444 100%);
-      color: #f1f1f1;
+    
+    /* Full-page background to cover all visible areas */
+    html, body {
       min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed;
+      background-size: cover;
+      background-color: #111; /* Fallback */
+      font-family: 'Poppins', sans-serif;
+      color: #f1f1f1;
+      overflow-x: hidden;
+      /* Allow natural bounce on touch devices (if desired) */
+      overscroll-behavior: contain;
     }
-
+    
     /* WRAPPER CONTAINER */
     .wrapper {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 20px auto; /* add a small margin so the content isn’t flush with the edge */
       padding: 40px 20px;
-      flex: 1; /* pushes footer to bottom */
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      /* Ensure the wrapper’s background blends with the page background */
     }
-
+    
     /* HEADER */
     header {
       text-align: center;
@@ -63,7 +73,7 @@
     header a:hover {
       text-decoration: underline;
     }
-
+    
     /* GIF CONTAINER */
     .gif-container {
       text-align: center;
@@ -75,7 +85,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-
+    
     /* SECTIONS */
     section {
       background: rgba(255, 255, 255, 0.05);
@@ -99,7 +109,7 @@
       color: #ddd;
       margin-bottom: 10px;
     }
-
+    
     ul {
       list-style: none;
       padding-left: 0;
@@ -110,7 +120,7 @@
       gap: 8px;
       margin-bottom: 10px;
     }
-
+    
     /* TOKEN INFO WRAPPER */
     .token-info {
       display: flex;
@@ -119,7 +129,7 @@
       justify-content: center;
       margin-top: 20px;
     }
-
+    
     /* INFO CARD */
     .info-card {
       flex: 1;
@@ -144,7 +154,7 @@
       word-wrap: break-word;
       overflow-wrap: break-word;
     }
-
+    
     /* BUTTON STYLING */
     .button-row {
       text-align: center;
@@ -163,7 +173,7 @@
     .btn:hover {
       background: #fff;
     }
-
+    
     /* LINKS LIST (CENTERED, HORIZONTAL) */
     .links-list {
       display: flex;
@@ -177,7 +187,6 @@
     .links-list li {
       margin: 0;
     }
-
     .links-list a {
       color: gold;
       font-weight: 500;
@@ -189,24 +198,49 @@
     .links-list a:hover {
       color: #fff;
     }
-
     .link-logo {
       width: 36px;
       height: 36px;
     }
-
+    
+    /* FOOTER */
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #ccc;
       margin: 20px 0 10px;
     }
+    
+    /* PRINT RULES: Ensure background and margins remain consistent in PDF export */
+    @media print {
+      @page {
+        margin: 0;
+      }
+      html, body {
+        background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed !important;
+        background-size: cover !important;
+        background-color: #111 !important;
+      }
+      .wrapper {
+        margin: 0 !important;
+        padding: 20px !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+      }
+      footer {
+        margin: 0 !important;
+        padding: 20px !important;
+        background: #111 !important;
+      }
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
   </style>
 </head>
 <body>
-
   <div class="wrapper">
-
     <!-- HEADER -->
     <header>
       <h1>$GRATE Token</h1>
@@ -219,27 +253,23 @@
         </a>
       </p>
     </header>
-
+    
     <!-- GIF CONTAINER -->
     <div class="gif-container">
       <img src="images/grate_token_transparent.gif" alt="$GRATE Animated Logo" />
     </div>
-
+    
     <!-- ABOUT SECTION -->
     <section>
       <h2>About $GRATE</h2>
       <p>
-        $GRATE is a fun, meme-driven project focused on uniting the crypto
-        community with an accessible token. Inspired by the power of Internet culture,
-        we aim to bring people together while paving the way for new developments
-        in decentralized finance.
+        $GRATE is a fun, meme-driven project focused on uniting the crypto community with an accessible token. Inspired by Internet culture, we aim to bring people together while paving the way for new developments in decentralized finance.
       </p>
       <p>
-        Whether you're new to crypto or a seasoned veteran, $GRATE welcomes you
-        to join our journey toward a future shaped by collective creativity and innovation.
+        Whether you're new to crypto or a seasoned veteran, $GRATE welcomes you to join our journey toward a future shaped by collective creativity and innovation.
       </p>
     </section>
-
+    
     <!-- TOKEN INFO -->
     <section>
       <h2>Token Info</h2>
@@ -260,7 +290,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- ROADMAP -->
     <section>
       <h2>Roadmap</h2>
@@ -271,61 +301,43 @@
         <li>🔒 Long-Term Utility & Ecosystem Growth</li>
       </ul>
     </section>
-
+    
     <!-- TRACK & TRADE -->
     <section>
       <h2>Track & Trade</h2>
       <p>Monitor $GRATE on these platforms for real-time data and trading:</p>
       <ul class="links-list">
         <li>
-          <a
-            href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap"
-            target="_blank"
-          >
-            <img
-              src="images/pumpfun.png"
-              alt="Pump.Fun Logo"
-              class="link-logo"
-            />
+          <a href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap" target="_blank">
+            <img src="images/pumpfun.png" alt="Pump.Fun Logo" class="link-logo" />
             Pump.Fun
           </a>
         </li>
         <li>
-          <a
-            href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd"
-            target="_blank"
-          >
-            <img
-              src="images/dexscreener.png"
-              alt="DexScreener Logo"
-              class="link-logo"
-            />
+          <a href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd" target="_blank">
+            <img src="images/dexscreener.png" alt="DexScreener Logo" class="link-logo" />
             Dexscreener
           </a>
         </li>
       </ul>
     </section>
-
+    
     <!-- WHITEPAPER -->
-  <section>
-  <h2>Whitepaper</h2>
-  <p>
-    Ready to delve deeper into our vision? Read our official whitepaper to learn more about how $GRATE plans to revolutionize meme-token culture.
-  </p>
-  <div class="button-row">
-    <!-- Change the link to point to whitepaper.html -->
-    <a href="/whitepaper/" class="btn">
-      Read Whitepaper
-    </a>
+    <section>
+      <h2>Whitepaper</h2>
+      <p>
+        Ready to delve deeper into our vision? Read our official whitepaper to learn more about how $GRATE plans to revolutionize meme-token culture.
+      </p>
+      <div class="button-row" style="text-align: center;">
+        <a href="/whitepaper/" class="btn">Read Whitepaper</a>
+      </div>
+    </section>
+    
   </div>
-</section>
-
-  </div>
-
+  
   <!-- FOOTER -->
   <footer>
     &copy; 2025 $GRATE Token. All rights reserved.
   </footer>
-
 </body>
 </html>
