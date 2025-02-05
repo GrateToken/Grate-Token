@@ -125,6 +125,12 @@
       font-weight: 300;
       color: #eee;
     }
+    /* This ensures long text wraps to a new line */
+    .contract-address {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      margin-top: 5px;
+    }
 
     /* FOOTER */
     footer {
@@ -148,7 +154,7 @@
     <!-- GIF CONTAINER -->
     <div class="gif-container">
       <!-- Make sure the file name and path match exactly -->
-      <img src="images/grate_token.gif" alt="$GRATE Animated Logo" />
+      <img src="images/grat_token.gif" alt="$GRATE Animated Logo" />
     </div>
 
     <!-- ABOUT SECTION -->
@@ -171,7 +177,9 @@
         </div>
         <div class="info-card">
           <h3>Contract</h3>
-          <p>FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump</p>
+          <p class="contract-address">
+            FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump
+          </p>
         </div>
         <div class="info-card">
           <h3>Total Supply</h3>
