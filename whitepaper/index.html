@@ -4,42 +4,38 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>$GRATE Whitepaper | Version 1.0 - February 2025</title>
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
-
   <style>
-    /* GLOBAL RESET & BASE */
+    /* GLOBAL RESET */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
-    /* Full-page background */
+    /* Screen Styles */
     html, body {
       min-height: 100vh;
       background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed;
       background-size: cover;
+      background-color: #111;
       color: #f1f1f1;
       font-family: 'Poppins', sans-serif;
       line-height: 1.6;
       padding: 20px;
-      overscroll-behavior: contain;
+      /* Allow natural scroll bounce */
       overflow-x: hidden;
     }
-
     .wrapper {
       max-width: 900px;
-      margin: 0 auto;
+      margin: 20px auto;
       padding: 40px 20px;
       background: rgba(0, 0, 0, 0.5);
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
-
     header {
       text-align: center;
       margin-bottom: 40px;
@@ -56,11 +52,10 @@
       font-size: 1rem;
       color: #ddd;
     }
-
     section {
       margin-bottom: 35px;
       padding: 25px;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255,255,255,0.05);
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
@@ -101,7 +96,7 @@
     .col {
       flex: 1;
       min-width: 220px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255,255,255,0.1);
       border-radius: 8px;
       padding: 15px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.3);
@@ -118,6 +113,9 @@
       font-size: 0.9rem;
       color: #ccc;
       margin-top: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      border-radius: 8px;
     }
     a {
       color: gold;
@@ -127,20 +125,46 @@
     a:hover {
       text-decoration: underline;
     }
-
-    /* Print-specific adjustments to help remove extra white margins */
+    .button-row {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: gold;
+      color: #111;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: #fff;
+    }
+    /* Print Styles */
     @media print {
+      @page {
+        margin: 0;
+      }
       html, body {
         margin: 0;
         padding: 0;
         background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed !important;
         background-size: cover !important;
+        background-color: #111;
       }
       .wrapper {
         margin: 0 !important;
         padding: 20px !important;
         box-shadow: none !important;
         border-radius: 0 !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+      }
+      .footer {
+        margin-top: 0 !important;
+        padding: 20px !important;
+        background: rgba(0, 0, 0, 0.5) !important;
       }
       * {
         -webkit-print-color-adjust: exact !important;
@@ -152,16 +176,14 @@
 <body>
   <div class="wrapper">
     <!-- Navigation Buttons -->
-    <div class="button-row" style="text-align: left; margin-bottom: 20px;">
-      <a href="/" class="btn" style="padding: 10px 18px;">Back to Main Page</a>
+    <div class="button-row" style="text-align: left;">
+      <a href="/" class="btn">Back to Main Page</a>
     </div>
-
     <!-- HEADER -->
     <header>
       <h1>$GRATE Whitepaper</h1>
       <p class="version">Version 1.0 - February 2025</p>
     </header>
-
     <!-- INTRODUCTION -->
     <section id="introduction">
       <h2>Introduction</h2>
@@ -169,7 +191,6 @@
         $GRATE is more than just a meme token; it's a movement. Built on the Solana blockchain and launched via Pump.fun, $GRATE is designed to foster a community-driven ecosystem focused on engagement and growth. We make no promises regarding additional utilities, NFTs, or extra features beyond the token itself.
       </p>
     </section>
-
     <!-- TOKEN OVERVIEW -->
     <section id="token-overview">
       <h2>Token Overview</h2>
@@ -210,7 +231,6 @@
         </div>
       </div>
     </section>
-
     <!-- VISION & PURPOSE -->
     <section id="vision">
       <h2>Vision & Purpose</h2>
@@ -218,7 +238,6 @@
         Our vision is to build a fair, community-driven token ecosystem that evolves over time. While we focus on balanced token distribution and market stability, we are fully committed to rewarding our community. A portion of funds will be allocated to secure strategic partnerships, marketing, and community growth initiatives. Our milestones are aspirational—starting with modest targets and scaling upward as momentum builds.
       </p>
     </section>
-
     <!-- RELEASE & DISTRIBUTION SCHEDULE -->
     <section id="release-schedule">
       <h2>Release & Distribution Schedule</h2>
@@ -237,15 +256,13 @@
         <li>Giveaways will be implemented post-bonding based on favorable market performance</li>
       </ul>
     </section>
-
     <!-- GIVEAWAY STRUCTURE & MILESTONES -->
     <section id="giveaways">
       <h2>Giveaway Structure & Milestones</h2>
       <p>
-        We are dedicated to rewarding our community. As the market grows, we will implement ongoing giveaways and rewards that reflect the level of support and success achieved—without locking in fixed numbers. Early rewards will be introduced as soon as positive market momentum is observed, with further initiatives evolving as the project grows.
+        We are dedicated to rewarding our community. As the market grows, we will implement ongoing giveaways and rewards that reflect our collective support—without locking in fixed numbers. Early rewards will be introduced as soon as positive market momentum is observed, with further initiatives evolving as the project grows.
       </p>
     </section>
-
     <!-- POST-BONDING TOKEN MANAGEMENT -->
     <section id="token-management">
       <h2>Post-Bonding Token Management</h2>
@@ -256,7 +273,6 @@
         <li><strong>Market Stability & Liquidity:</strong> Resources will be maintained to support healthy trading and further growth</li>
       </ul>
     </section>
-
     <!-- SECURITY & SUSTAINABILITY -->
     <section id="security">
       <h2>Security & Sustainability</h2>
@@ -266,7 +282,6 @@
         <li><strong>Community Governance:</strong> Holders will have a say in how funds are spent to grow $GRATE, ensuring decisions benefit the entire community.</li>
       </ul>
     </section>
-
     <!-- HOW TO GET INVOLVED -->
     <section id="get-involved">
       <h2>How to Get Involved</h2>
@@ -276,7 +291,6 @@
         <li><strong>Spread Awareness:</strong> Help us reach a wider audience through social media engagement.</li>
       </ul>
     </section>
-
     <!-- CONCLUSION -->
     <section id="conclusion">
       <h2>Conclusion</h2>
@@ -293,19 +307,16 @@
         Disclaimer: This whitepaper is for informational purposes only and is not legally binding. The project team reserves the right to update this document as the project evolves.
       </p>
     </section>
-
     <!-- PDF DOWNLOAD SECTION -->
     <section id="download">
       <div class="button-row" style="text-align: center; margin-top: 30px;">
-        <a href="whitepaper.pdf" download class="btn" style="padding: 10px 18px;">Download PDF</a>
+        <a href="whitepaper.pdf" download class="btn">Download PDF</a>
       </div>
     </section>
-
     <!-- FOOTER -->
     <footer class="footer">
       &copy; 2025 $GRATE Token. All rights reserved.
     </footer>
-
   </div>
 </body>
 </html>
