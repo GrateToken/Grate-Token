@@ -168,32 +168,36 @@
       background: #fff;
     }
 
-    /* IMPORTANT LINKS STYLING */
+    /* LINKS LIST (CENTERED, HORIZONTAL) */
     .links-list {
-      list-style-type: none;
+      display: flex;              /* horizontal layout */
+      justify-content: center;    /* center horizontally */
+      align-items: center;        /* center vertically */
+      gap: 2rem;                  /* space between items */
+      list-style-type: none;      /* remove bullet points */
       margin: 0;
       padding: 0;
-      text-align: center;
     }
     .links-list li {
-      margin: 10px 0;
+      margin: 0; /* no extra vertical spacing */
     }
-    /* Make anchor a flex container with perfect center alignment */
+
+    /* INDIVIDUAL LINK STYLING */
     .links-list a {
       color: gold;
       font-weight: 500;
       text-decoration: none;
       transition: color 0.3s;
-      display: inline-flex;      /* key for controlling alignment */
-      align-items: center;       /* vertically centers icon + text */
-      gap: 8px;                  /* space between icon & text */
+      display: inline-flex;
+      align-items: center;
+      gap: 8px; /* space between icon & text */
     }
     .links-list a:hover {
       color: #fff;
       text-decoration: underline;
     }
 
-    /* LINK LOGOS - LARGER */
+    /* LINK LOGO SIZING */
     .link-logo {
       width: 24px;
       height: 24px;
