@@ -19,13 +19,19 @@
       margin: 0;
       padding: 0;
       min-height: 100vh;
-      background: linear-gradient(120deg, #111 30%, #444 100%);
-      background-attachment: fixed; /* Ensures the background stays fixed during scroll/bounce */
+      /* Set a fallback background color */
+      background-color: #111;
+      /* Use the gradient background, fixed and covering the viewport */
+      background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat fixed center;
+      background-size: cover;
+      /* Prevent the browser’s overscroll from showing a white area */
+      overscroll-behavior: none;
       font-family: 'Poppins', sans-serif;
       color: #f1f1f1;
+      overflow-x: hidden;
     }
     
-    /* @page rule to remove default print margins */
+    /* Remove default print margins (some browsers may still add minimal margins) */
     @page {
       margin: 0;
     }
@@ -151,7 +157,7 @@
       margin: 20px 0 10px;
     }
     
-    /* Print-specific rules */
+    /* Print-specific rules to force colors/backgrounds and hide navigation */
     @media print {
       * {
         -webkit-print-color-adjust: exact !important;
@@ -286,4 +292,19 @@
     <section>
       <h2>Conclusion</h2>
       <p>$GRATE is a community-first, incentive-driven token designed to make a lasting impact in the Solana ecosystem. With structured token distribution, market stability plans, and community-driven growth, we are committed to building a long-term, sustainable token economy.</p>
-      <p>The future of $GRATE is in the hands of its holders—together
+      <p>The future of $GRATE is in the hands of its holders—together, we make it thrive.</p>
+      <p>🚀 Follow us on <a href="https://x.com/GrateToken" target="_blank">X</a> | 🌐 Visit our <a href="https://gratetoken.com" target="_blank">Website</a></p>
+    </section>
+
+    <!-- Download PDF Button -->
+    <section class="button-row">
+      <a href="whitepaper.pdf" download class="btn">Download PDF</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 $GRATE Token. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
