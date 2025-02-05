@@ -178,15 +178,15 @@
     .links-list li {
       margin: 10px 0;
     }
-    /* Use inline-flex for perfect vertical alignment */
+    /* Make anchor a flex container with perfect center alignment */
     .links-list a {
       color: gold;
       font-weight: 500;
       text-decoration: none;
       transition: color 0.3s;
-      display: inline-flex;
-      align-items: center;
-      /* You can also add gap if you prefer: gap: 8px; */
+      display: inline-flex;      /* key for controlling alignment */
+      align-items: center;       /* vertically centers icon + text */
+      gap: 8px;                  /* space between icon & text */
     }
     .links-list a:hover {
       color: #fff;
@@ -195,9 +195,8 @@
 
     /* LINK LOGOS - LARGER */
     .link-logo {
-      width: 24px; /* increased from 20px */
+      width: 24px;
       height: 24px;
-      margin-right: 8px;
       border-radius: 4px;
     }
 
