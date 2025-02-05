@@ -53,6 +53,15 @@
       font-weight: 300;
       color: #ddd;
       font-size: 1rem;
+      margin-bottom: 8px;
+    }
+    header a {
+      color: gold;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    header a:hover {
+      text-decoration: underline;
     }
 
     /* GIF CONTAINER */
@@ -127,8 +136,8 @@
     .info-card p {
       font-weight: 300;
       color: #eee;
-      word-wrap: break-word;       /* ensures long text can wrap */
-      overflow-wrap: break-word;   /* ensures long text can wrap */
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
 
     /* HORIZONTAL LINE STYLE */
@@ -137,6 +146,26 @@
       margin: 10px auto 15px auto;
       border: none;
       border-top: 1px solid rgba(255, 255, 255, 0.4);
+    }
+
+    /* WHITEPAPER BUTTON */
+    .button-row {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .btn {
+      background: gold;
+      color: #111;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s;
+      margin: 5px;
+    }
+    .btn:hover {
+      background: #fff;
     }
 
     /* FOOTER */
@@ -156,21 +185,30 @@
     <header>
       <h1>$GRATE Token</h1>
       <p>The Community-Driven Meme Token</p>
+      <p>
+        Follow us for the latest news: 
+        <a href="https://x.com/GrateToken" target="_blank">@GrateToken</a>
+      </p>
     </header>
 
     <!-- GIF CONTAINER -->
     <div class="gif-container">
-      <!-- Ensure images/grat_token.gif is correct path & file name -->
-      <img src="images/grat_token.gif" alt="$GRATE Animated Logo" />
+      <!-- Make sure the file name and path match your 'images' folder -->
+      <img src="images/grate_token.gif" alt="$GRATE Animated Logo" />
     </div>
 
     <!-- ABOUT SECTION -->
     <section>
       <h2>About $GRATE</h2>
       <p>
-        $GRATE is a meme-driven project focused on uniting the crypto community
-        with a fun and accessible token. Join us on our journey to revolutionize
-        how people engage with digital assets.
+        $GRATE is a fun, meme-driven project focused on uniting the crypto
+        community with an accessible token. Inspired by the power of Internet culture, 
+        we aim to bring people together while paving the way for new developments 
+        in decentralized finance.
+      </p>
+      <p>
+        Whether you're new to crypto or a seasoned veteran, $GRATE welcomes you 
+        to join our journey toward a future shaped by collective creativity and innovation.
       </p>
     </section>
 
@@ -185,7 +223,6 @@
         <div class="info-card">
           <h3>Contract</h3>
           <hr class="hr-line" />
-          <!-- On its own line, with word-wrap for extra length -->
           <p>FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump</p>
         </div>
         <div class="info-card">
@@ -199,11 +236,26 @@
     <section>
       <h2>Roadmap</h2>
       <ul>
-        <li>Launch & Initial Distribution</li>
-        <li>Community Building & Marketing</li>
-        <li>Exchange Listings & Partnerships</li>
-        <li>Future Utility & Ecosystem Expansion</li>
+        <li>Token Launch & Initial Distribution</li>
+        <li>Community Building & Social Engagement</li>
+        <li>Listings & Strategic Partnerships</li>
+        <li>Long-Term Utility & Ecosystem Growth</li>
       </ul>
+    </section>
+
+    <!-- WHITEPAPER (Download) -->
+    <section>
+      <h2>Whitepaper</h2>
+      <p>
+        Ready to delve deeper into our vision? Stay tuned for our official 
+        whitepaper, detailing how $GRATE plans to revolutionize meme-token culture.
+      </p>
+      <div class="button-row">
+        <!-- Link to your PDF or a "Coming Soon" page -->
+        <a href="whitepaper.pdf" target="_blank" class="btn">
+          Download Whitepaper
+        </a>
+      </div>
     </section>
 
   </div>
