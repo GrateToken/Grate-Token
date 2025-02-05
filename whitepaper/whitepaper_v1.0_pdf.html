@@ -4,10 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>$GRATE Whitepaper | PDF Version</title>
+  
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
+  
   <style>
     /* GLOBAL RESET */
     * {
@@ -26,6 +28,7 @@
       line-height: 1.6;
       padding: 20px;
       overflow-x: hidden;
+      overscroll-behavior: contain;
     }
     .wrapper {
       max-width: 900px;
@@ -35,9 +38,17 @@
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
+    /* HEADER WITH LOGO */
     header {
       text-align: center;
       margin-bottom: 40px;
+    }
+    header img {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 300px;
+      width: 100%;
+      height: auto;
     }
     header h1 {
       font-size: 2.8rem;
@@ -154,19 +165,21 @@
 </head>
 <body>
   <div class="wrapper">
-    <!-- HEADER -->
+    <!-- HEADER WITH LOGO -->
     <header>
+      <img src="../images/grat_logo.jpg" alt="$GRATE Logo">
       <h1>$GRATE Whitepaper</h1>
       <p class="version">Version 1.0 - February 2025</p>
     </header>
-    <!-- INTRODUCTION -->
+    
+    <!-- CONTENT SECTIONS -->
     <section id="introduction">
       <h2>Introduction</h2>
       <p>
         $GRATE is more than just a meme token; it's a movement. Built on the Solana blockchain and launched via Pump.fun, $GRATE is designed to foster a community-driven ecosystem focused on engagement and growth. We make no promises regarding additional utilities, NFTs, or extra features beyond the token itself.
       </p>
     </section>
-    <!-- TOKEN OVERVIEW -->
+    
     <section id="token-overview">
       <h2>Token Overview</h2>
       <div class="two-col">
@@ -206,14 +219,14 @@
         </div>
       </div>
     </section>
-    <!-- VISION & PURPOSE -->
+    
     <section id="vision">
       <h2>Vision & Purpose</h2>
       <p>
         Our vision is to build a fair, community-driven token ecosystem that evolves over time. While we focus on balanced token distribution and market stability, we are fully committed to rewarding our community. A portion of funds will be allocated to secure strategic partnerships, marketing, and community growth initiatives. Our milestones are aspirational—starting with modest targets and scaling upward as momentum builds.
       </p>
     </section>
-    <!-- RELEASE & DISTRIBUTION SCHEDULE -->
+    
     <section id="release-schedule">
       <h2>Release & Distribution Schedule</h2>
       <p><strong>Phase 1: Pre-Bonding (Current)</strong></p>
@@ -231,14 +244,14 @@
         <li>Giveaways will be implemented post-bonding based on favorable market performance</li>
       </ul>
     </section>
-    <!-- GIVEAWAY STRUCTURE & MILESTONES -->
+    
     <section id="giveaways">
       <h2>Giveaway Structure & Milestones</h2>
       <p>
         We are dedicated to rewarding our community. As the market grows, we will implement ongoing giveaways and rewards that reflect our collective support—without locking in fixed numbers. Early rewards will be introduced as soon as positive market momentum is observed, with further initiatives evolving as the project grows.
       </p>
     </section>
-    <!-- POST-BONDING TOKEN MANAGEMENT -->
+    
     <section id="token-management">
       <h2>Post-Bonding Token Management</h2>
       <ul>
@@ -248,7 +261,7 @@
         <li><strong>Market Stability & Liquidity:</strong> Resources will be maintained to support healthy trading and further growth</li>
       </ul>
     </section>
-    <!-- SECURITY & SUSTAINABILITY -->
+    
     <section id="security">
       <h2>Security & Sustainability</h2>
       <ul>
@@ -257,7 +270,7 @@
         <li><strong>Community Governance:</strong> Holders will have a say in how funds are spent to grow $GRATE, ensuring decisions benefit the entire community.</li>
       </ul>
     </section>
-    <!-- HOW TO GET INVOLVED -->
+    
     <section id="get-involved">
       <h2>How to Get Involved</h2>
       <ul>
@@ -266,7 +279,7 @@
         <li><strong>Spread Awareness:</strong> Help us reach a wider audience through social media engagement.</li>
       </ul>
     </section>
-    <!-- CONCLUSION -->
+    
     <section id="conclusion">
       <h2>Conclusion</h2>
       <p>
@@ -282,10 +295,7 @@
         Disclaimer: This whitepaper is for informational purposes only and is not legally binding. The project team reserves the right to update this document as the project evolves.
       </p>
     </section>
-    <!-- FOOTER -->
-    <footer class="footer">
-      &copy; 2025 $GRATE Token. All rights reserved.
-    </footer>
+    
   </div>
 </body>
 </html>
