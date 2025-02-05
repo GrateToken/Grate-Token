@@ -19,19 +19,17 @@
       margin: 0;
       padding: 0;
       min-height: 100vh;
-      /* Set a fallback background color */
-      background-color: #111;
-      /* Use the gradient background, fixed and covering the viewport */
+      background-color: #111; /* Fallback color */
       background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat fixed center;
       background-size: cover;
-      /* Prevent the browser’s overscroll from showing a white area */
-      overscroll-behavior: none;
+      /* Allow some natural bounce while trying to contain overscroll */
+      overscroll-behavior: contain;
       font-family: 'Poppins', sans-serif;
       color: #f1f1f1;
       overflow-x: hidden;
     }
     
-    /* Remove default print margins (some browsers may still add minimal margins) */
+    /* @page rule to remove default print margins */
     @page {
       margin: 0;
     }
