@@ -130,7 +130,6 @@
       padding: 20px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.3);
       margin-bottom: 10px;
-      position: relative;
     }
     .info-card h3 {
       margin-bottom: 8px;
@@ -146,59 +145,56 @@
       overflow-wrap: break-word;
     }
 
-    .info-card p.truncated {
-      cursor: pointer;
+    /* BUTTON STYLING */
+    .button-row {
+      text-align: center;
+      margin-top: 20px;
     }
-
-    .info-card p.truncated:hover::after {
-      content: attr(title);
-      position: absolute;
-      background: #333;
-      color: white;
-      padding: 5px 8px;
-      border-radius: 5px;
-      font-size: 0.8rem;
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, 10px);
+    .btn {
+      background: gold;
+      color: #111;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      display: inline-block;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #fff;
     }
 
     /* LINKS LIST (CENTERED, HORIZONTAL) */
     .links-list {
-      display: flex;              /* horizontal layout */
-      justify-content: center;    /* center horizontally */
-      align-items: center;        /* center vertically */
-      gap: 3rem;                  /* space between items */
-      list-style-type: none;      /* remove bullet points */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      list-style-type: none;
       margin: 0;
       padding: 0;
     }
     .links-list li {
-      margin: 0; /* no extra vertical spacing */
+      margin: 0;
     }
 
-    /* INDIVIDUAL LINK STYLING */
     .links-list a {
       color: gold;
       font-weight: 500;
       text-decoration: none;
-      transition: color 0.3s;
       display: inline-flex;
       align-items: center;
-      gap: 8px; /* space between icon & text */
+      gap: 8px;
     }
     .links-list a:hover {
       color: #fff;
-      text-decoration: underline;
     }
 
-    /* LINK LOGO SIZING */
     .link-logo {
       width: 36px;
       height: 36px;
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -254,8 +250,8 @@
         </div>
         <div class="info-card">
           <h3>Contract</h3>
-          <p class="truncated" title="FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump">
-            FKVYQSkLd...
+          <p style="font-size: 0.9rem; word-break: break-all;">
+            FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump
           </p>
         </div>
         <div class="info-card">
