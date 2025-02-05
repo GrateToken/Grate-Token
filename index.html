@@ -43,7 +43,7 @@
       margin-bottom: 40px;
     }
     header h1 {
-      font-size: 2.2rem;
+      font-size: 2.4rem;
       font-weight: 700;
       color: #f1f1f1;
       margin-bottom: 12px;
@@ -67,7 +67,7 @@
     /* GIF CONTAINER */
     .gif-container {
       text-align: center;
-      margin: 35px 0;
+      margin: 50px 0;
     }
     .gif-container img {
       width: 320px;
@@ -85,13 +85,13 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
     section h2 {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       font-weight: 600;
       color: #fff;
       margin-bottom: 15px;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 1.5px;
     }
     section p, section li {
       font-weight: 300;
@@ -134,73 +134,40 @@
       text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
     .info-card p {
-      font-weight: 300;
-      color: #eee;
       word-wrap: break-word;
       overflow-wrap: break-word;
-    }
-
-    /* HORIZONTAL LINE STYLE */
-    .hr-line {
-      width: 50%;
-      margin: 10px auto 15px auto;
-      border: none;
-      border-top: 1px solid rgba(255, 255, 255, 0.4);
-    }
-
-    /* WHITEPAPER BUTTON */
-    .button-row {
       text-align: center;
-      margin-top: 20px;
-    }
-    .btn {
-      background: gold;
-      color: #111;
-      text-decoration: none;
-      padding: 12px 20px;
-      border-radius: 6px;
-      font-weight: 600;
-      display: inline-block;
-      transition: 0.3s;
-      margin: 5px;
-    }
-    .btn:hover {
-      background: #fff;
+      font-weight: 300;
+      color: #eee;
     }
 
-    /* LINKS LIST (CENTERED, HORIZONTAL) */
+    /* LINKS LIST (TRACK & TRADE) */
     .links-list {
-      display: flex;              /* horizontal layout */
-      justify-content: center;    /* center horizontally */
-      align-items: center;        /* center vertically */
-      gap: 2rem;                  /* space between items */
-      list-style-type: none;      /* remove bullet points */
-      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem; /* Space between links */
+      list-style-type: none;
+      margin: 20px auto; /* Adds vertical spacing */
       padding: 0;
     }
-    .links-list li {
-      margin: 0; /* no extra vertical spacing */
-    }
-
-    /* INDIVIDUAL LINK STYLING */
     .links-list a {
       color: gold;
       font-weight: 500;
       text-decoration: none;
-      transition: color 0.3s;
       display: inline-flex;
       align-items: center;
-      gap: 8px; /* space between icon & text */
+      gap: 10px; /* Space between icon and text */
+      font-size: 1.1rem;
+      transition: color 0.3s;
     }
     .links-list a:hover {
       color: #fff;
-      text-decoration: underline;
     }
 
-    /* LINK LOGO SIZING */
     .link-logo {
-      width: 24px;
-      height: 24px;
+      width: 32px;
+      height: 32px;
       border-radius: 4px;
     }
 
@@ -223,13 +190,16 @@
       <p>The Community-Driven Meme Token</p>
       <p>
         Follow us for the latest news:
-        <a href="https://x.com/GrateToken" target="_blank">@GrateToken</a>
+        <a href="https://x.com/GrateToken" target="_blank">
+          <img src="images/x_logo.png" alt="X Logo" style="width: 16px; vertical-align: middle; margin-right: 5px;" />
+          @GrateToken
+        </a>
       </p>
     </header>
 
     <!-- GIF CONTAINER -->
     <div class="gif-container">
-      <img src="images/grate_token_transparent.gif" alt="$GRATE Animated Logo" />
+      <img src="images/grate_token.gif" alt="$GRATE Animated Logo" />
     </div>
 
     <!-- ABOUT SECTION -->
@@ -253,11 +223,10 @@
       <div class="token-info">
         <div class="info-card">
           <h3>Symbol</h3>
-          <p>$GRATE</p>
+          <p>GRATE</p>
         </div>
         <div class="info-card">
           <h3>Contract</h3>
-          <hr class="hr-line" />
           <p>FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump</p>
         </div>
         <div class="info-card">
@@ -267,52 +236,27 @@
       </div>
     </section>
 
-    <!-- ROADMAP (ALREADY LAUNCHED) -->
-    <section>
-      <h2>Roadmap</h2>
-      <ul>
-        <li><strong>Launched Successfully</strong></li>
-        <li>Community Building & Social Engagement</li>
-        <li>Listings & Strategic Partnerships</li>
-        <li>Long-Term Utility & Ecosystem Growth</li>
-      </ul>
-    </section>
-
-    <!-- IMPORTANT LINKS -->
+    <!-- TRACK & TRADE -->
     <section>
       <h2>Track & Trade</h2>
       <p>Monitor $GRATE on these platforms for real-time data and trading:</p>
       <ul class="links-list">
         <li>
-          <a
-            href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap"
-            target="_blank"
-          >
-            <img
-              src="images/pumpfun.png"
-              alt="Pump.Fun Logo"
-              class="link-logo"
-            />
+          <a href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap" target="_blank">
+            <img src="images/pumpfun.png" alt="Pump.Fun Logo" class="link-logo" />
             Pump.Fun
           </a>
         </li>
         <li>
-          <a
-            href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd"
-            target="_blank"
-          >
-            <img
-              src="images/dexscreener.png"
-              alt="DexScreener Logo"
-              class="link-logo"
-            />
+          <a href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd" target="_blank">
+            <img src="images/dexscreener.png" alt="DexScreener Logo" class="link-logo" />
             Dexscreener
           </a>
         </li>
       </ul>
     </section>
 
-    <!-- WHITEPAPER (Download) -->
+    <!-- WHITEPAPER -->
     <section>
       <h2>Whitepaper</h2>
       <p>
@@ -320,7 +264,6 @@
         whitepaper, detailing how $GRATE plans to revolutionize meme-token culture.
       </p>
       <div class="button-row">
-        <!-- Link to your PDF or "Coming Soon" until it's available -->
         <a href="whitepaper.pdf" target="_blank" class="btn">
           Download Whitepaper
         </a>
