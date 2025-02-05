@@ -17,6 +17,7 @@
       padding: 0;
       box-sizing: border-box;
     }
+    
     /* Full-page background for PDF export */
     html, body {
       min-height: 100vh;
@@ -30,6 +31,7 @@
       overflow-x: hidden;
       overscroll-behavior: contain;
     }
+    
     .wrapper {
       max-width: 900px;
       margin: 0 auto;
@@ -38,6 +40,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
+    
     /* HEADER WITH LOGO */
     header {
       text-align: center;
@@ -62,6 +65,8 @@
       font-size: 1rem;
       color: #ddd;
     }
+    
+    /* CONTENT SECTIONS */
     section {
       margin-bottom: 35px;
       padding: 25px;
@@ -118,6 +123,24 @@
       margin-bottom: 8px;
       text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     }
+    
+    /* Definition list styling for management sections */
+    .management {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px 20px;
+      margin-top: 10px;
+    }
+    .management dt {
+      font-weight: 600;
+      color: gold;
+      padding-top: 4px;
+    }
+    .management dd {
+      margin: 0;
+      color: #ddd;
+    }
+    
     .footer {
       text-align: center;
       font-size: 0.9rem;
@@ -133,6 +156,7 @@
     a:hover {
       text-decoration: underline;
     }
+    
     /* Print adjustments for PDF export */
     @media print {
       @page {
@@ -167,7 +191,7 @@
   <div class="wrapper">
     <!-- HEADER WITH LOGO -->
     <header>
-      <img src="../images/grate_logo.jpg" alt="$GRATE Logo">
+      <img src="../images/grat_logo.jpg" alt="$GRATE Logo">
       <h1>$GRATE Whitepaper</h1>
       <p class="version">Version 1.0 - February 2025</p>
     </header>
@@ -254,21 +278,28 @@
     
     <section id="token-management">
       <h2>Post-Bonding Token Management</h2>
-      <ul>
-        <li><strong>Developer Holdings:</strong> 215M $GRATE (Pre-Bonding)</li>
-        <li><strong>Marketing & Partnerships:</strong> A portion of funds will be allocated to secure strategic partnerships, marketing, and community growth</li>
-        <li><strong>Community Engagement:</strong> Additional resources will be set aside to reward and support our community after bonding</li>
-        <li><strong>Market Stability & Liquidity:</strong> Resources will be maintained to support healthy trading and further growth</li>
-      </ul>
+      <dl class="management">
+        <dt>Developer Holdings:</dt>
+        <dd>215M $GRATE (Pre-Bonding)</dd>
+        <dt>Marketing & Partnerships:</dt>
+        <dd>A portion of funds will be allocated to secure strategic partnerships, marketing, and community growth.</dd>
+        <dt>Community Engagement:</dt>
+        <dd>Additional resources will be set aside to reward and support our community after bonding.</dd>
+        <dt>Market Stability & Liquidity:</dt>
+        <dd>Resources will be maintained to support healthy trading and further growth.</dd>
+      </dl>
     </section>
     
     <section id="security">
       <h2>Security & Sustainability</h2>
-      <ul>
-        <li><strong>Liquidity Locking:</strong> Bonding on Raydium ensures a secure liquidity pool.</li>
-        <li><strong>Transparent Allocation:</strong> Our team is committed to clear and open stewardship of token allocation.</li>
-        <li><strong>Community Governance:</strong> Holders will have a say in how funds are spent to grow $GRATE, ensuring decisions benefit the entire community.</li>
-      </ul>
+      <dl class="management">
+        <dt>Liquidity Locking:</dt>
+        <dd>Bonding on Raydium ensures a secure liquidity pool.</dd>
+        <dt>Transparent Allocation:</dt>
+        <dd>Our team is committed to clear and open stewardship of token allocation.</dd>
+        <dt>Community Governance:</dt>
+        <dd>Holders will have a say in how funds are spent to grow $GRATE, ensuring decisions benefit the entire community.</dd>
+      </dl>
     </section>
     
     <section id="get-involved">
@@ -295,7 +326,6 @@
         Disclaimer: This whitepaper is for informational purposes only and is not legally binding. The project team reserves the right to update this document as the project evolves.
       </p>
     </section>
-    
   </div>
 </body>
 </html>
