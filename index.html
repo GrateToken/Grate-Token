@@ -210,33 +210,6 @@
       color: #ccc;
       margin: 20px 0 10px;
     }
-    
-    /* PRINT RULES: Ensure background and margins remain consistent in PDF export */
-    @media print {
-      @page {
-        margin: 0;
-      }
-      html, body {
-        background: linear-gradient(120deg, #111 30%, #444 100%) no-repeat center center fixed !important;
-        background-size: cover !important;
-        background-color: #111 !important;
-      }
-      .wrapper {
-        margin: 0 !important;
-        padding: 20px !important;
-        box-shadow: none !important;
-        border-radius: 0 !important;
-      }
-      footer {
-        margin: 0 !important;
-        padding: 20px !important;
-        background: #111 !important;
-      }
-      * {
-        -webkit-print-color-adjust: exact !important;
-        print-color-adjust: exact !important;
-      }
-    }
   </style>
 </head>
 <body>
@@ -317,6 +290,12 @@
           <a href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd" target="_blank">
             <img src="images/dexscreener.png" alt="DexScreener Logo" class="link-logo" />
             Dexscreener
+          </a>
+        </li>
+        <li>
+          <a href="https://t.me/GrateTokenCommunity" target="_blank">
+            <img src="images/tg.png" alt="Telegram Logo" class="link-logo" />
+            Join Telegram
           </a>
         </li>
       </ul>
