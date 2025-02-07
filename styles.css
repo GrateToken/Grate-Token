@@ -1,3 +1,6 @@
+/*========================================
+  Theme Variables & Reset
+========================================*/
 :root {
   --primary-color: #222;              /* Main dark color */
   --secondary-color: #333;            /* Secondary dark tone */
