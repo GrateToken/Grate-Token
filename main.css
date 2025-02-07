@@ -242,6 +242,63 @@ footer {
     background: #111 !important;
   }
   * {
+
+/* MOBILE RESPONSIVENESS */
+
+/* Make the wrapper flexible */
+@media (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Improve Buttons for Mobile */
+@media (max-width: 768px) {
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+
+  .button-row {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Fix Token Info Grid */
+@media (max-width: 768px) {
+  .token-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info-card {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Ensure DexScreener Embed Resizes */
+@media (max-width: 768px) {
+  #dexscreener-embed {
+    padding-bottom: 90%;
+  }
+}
+
+
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
   }
