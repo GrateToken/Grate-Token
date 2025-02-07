@@ -2,18 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>$GRATE Token</title>
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
-  <!-- External CSS for Main Page -->
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Main CSS -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Favicon -->
+  <link rel="icon" href="images/grate_logo.jpg" type="image/jpeg">
 </head>
 <body>
+  <!-- Navbar (Shared) -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="navbar-container">
+      <a class="navbar-brand" href="index.html">$GRATE</a>
+      <div class="navbar-right">
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="whitepaper/">Whitepaper</a></li>
+        </ul>
+        <ul class="nav-icons">
+          <li>
+            <a href="https://x.com/GrateToken" target="_blank" rel="noopener noreferrer">
+              <img src="images/x_logo.png" alt="X Icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/GrateCoin" target="_blank" rel="noopener noreferrer">
+              <img src="images/tg.png" alt="Telegram Icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="wrapper">
-    <!-- HEADER -->
     <header>
       <h1>$GRATE Token</h1>
       <p>The Community-Driven Meme Token</p>
@@ -26,23 +52,16 @@
       </p>
     </header>
     
-    <!-- GIF CONTAINER -->
     <div class="gif-container">
       <img src="images/grate_token_transparent.gif" alt="$GRATE Animated Logo">
     </div>
     
-    <!-- ABOUT SECTION -->
     <section>
       <h2>About $GRATE</h2>
-      <p>
-        $GRATE is a fun, meme-driven project focused on uniting the crypto community with an accessible token. Inspired by Internet culture, we aim to bring people together while paving the way for new developments in decentralized finance.
-      </p>
-      <p>
-        Whether you're new to crypto or a seasoned veteran, $GRATE welcomes you to join our journey toward a future shaped by collective creativity and innovation.
-      </p>
+      <p>$GRATE is a fun, meme-driven project focused on uniting the crypto community with an accessible token. Inspired by Internet culture, we aim to bring people together while paving the way for new developments in decentralized finance.</p>
+      <p>Whether you're new to crypto or a seasoned veteran, $GRATE welcomes you to join our journey toward a future shaped by collective creativity and innovation.</p>
     </section>
     
-    <!-- TOKEN INFO -->
     <section>
       <h2>Token Info</h2>
       <div class="token-info">
@@ -61,66 +80,141 @@
       </div>
     </section>
     
-    <!-- ROADMAP -->
-    <section>
-      <h2>Roadmap</h2>
-      <ul>
-        <li>🚀 <strong>Launched Successfully</strong></li>
-        <li>🌐 Community Building &amp; Social Engagement</li>
-        <li>📈 Listings &amp; Strategic Partnerships</li>
-        <li>🔒 Long-Term Utility &amp; Ecosystem Growth</li>
-      </ul>
+    <section id="roadmap">
+      <h2>Our Journey is Just Beginning.</h2>
+      <p>Here’s Our Vision for the Future:<br></p>
+      <div class="roadmap-item">
+        <h3>🚀 Token Launch &amp; Community Building</h3>
+        <p>Successful token launch with the formation of a vibrant initial community. DEX listings and website launch to establish our market presence.</p>
+      </div>
+      <div class="roadmap-item">
+        <h3>🔗 Bonding to Raydium</h3>
+        <p>Achieve bonding on Raydium to fuel momentum and secure liquidity.</p>
+      </div>
+      <div class="roadmap-item">
+        <h3>🌐 Expansion &amp; Partnerships</h3>
+        <p>Forge strategic collaborations and expand our network of contributors. Evolve across all departments to unlock advanced token utilities.</p>
+      </div>
+      <div class="roadmap-item">
+        <h3>✨ Innovation &amp; Future Growth</h3>
+        <p>Introduce a dynamic ecosystem that evolves with our community’s ideas and aspirations. Position $GRATE as the foundation for future assets and smart contracts, delivering immense long-term rewards.</p>
+      </div>
     </section>
     
-    <!-- TRACK & TRADE -->
     <section>
       <h2>Track & Trade</h2>
-      <p>Monitor $GRATE on these platforms for real-time data and trading:</p>
-      <ul class="links-list">
-        <li>
-          <a href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap" target="_blank" rel="noopener noreferrer">
-            <img src="images/pumpfun.png" alt="Pump.Fun Logo" class="link-logo">
-            Pump.Fun
-          </a>
-        </li>
-        <li>
-          <a href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd" target="_blank" rel="noopener noreferrer">
-            <img src="images/dexscreener.png" alt="DexScreener Logo" class="link-logo">
-            Dexscreener
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/GrateCoin" target="_blank" rel="noopener noreferrer">
-            <img src="images/tg.png" alt="Telegram Logo" class="link-logo">
-            Join Telegram
-          </a>
-        </li>
-      </ul>
+      <p class="center-text">Monitor $GRATE on these platforms for real-time data and trading:</p>
+      <div class="track-trade-container">
+        <ul class="links-list">
+          <li>
+            <a href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap" target="_blank" rel="noopener noreferrer">
+              <img src="images/pumpfun.png" alt="Pump.Fun Logo" class="link-logo">
+              Pump.Fun
+            </a>
+          </li>
+          <li>
+            <a href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd" target="_blank" rel="noopener noreferrer">
+              <img src="images/dexscreener.png" alt="Dexscreener Logo" class="link-logo">
+              Dexscreener
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/GrateCoin" target="_blank" rel="noopener noreferrer">
+              <img src="images/tg.png" alt="Telegram Logo" class="link-logo">
+              Telegram
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
     
-    <!-- LIVE MARKET DATA (DEXSCREENER EMBED) -->
     <section id="live-market">
       <h2>Live Market Data</h2>
-      <div id="dexscreener-embed">
+      <div class="responsive-iframe">
         <iframe src="https://dexscreener.com/solana/J76zmuUfFDewfmo8TNVywPbTh32dQXnGwRuGBLdNtSrd?embed=1&amp;loadChartSettings=0&amp;tabs=0&amp;info=0&amp;chartLeftToolbar=0&amp;chartTimeframesToolbar=0&amp;chartTheme=dark&amp;theme=dark&amp;chartStyle=1&amp;chartType=marketCap&amp;interval=15"></iframe>
       </div>
     </section>
     
-    <!-- WHITEPAPER -->
     <section>
       <h2>Whitepaper</h2>
-      <p>
-        Ready to delve deeper into our vision? Read our official whitepaper to learn more about how $GRATE plans to revolutionize meme-token culture.
-      </p>
+      <p>Ready to delve deeper into our vision? Read our official whitepaper to learn more about how $GRATE plans to revolutionize meme-token culture.</p>
       <div class="button-row">
         <a href="whitepaper/" class="btn">Read Whitepaper</a>
+        <button class="btn share-btn" onclick="shareWhitepaperMain()">🔗 Share</button>
+      </div>
+    </section>
+    
+    <section id="socials">
+      <h2>Follow Us</h2>
+      <div class="socials">
+        <a href="https://t.me/GrateCoin" target="_blank" rel="noopener noreferrer">
+          <img src="images/tg.png" alt="Telegram Icon" class="link-logo">
+          Telegram
+        </a>
+        <a href="https://x.com/GrateToken" target="_blank" rel="noopener noreferrer">
+          <img src="images/x_logo.png" alt="X Icon" class="link-logo">
+          X
+        </a>
       </div>
     </section>
   </div>
   
-  <!-- FOOTER -->
-  <footer>
-    &copy; 2025 $GRATE Token. All rights reserved.
+  <!-- Footer (Unified for all pages) -->
+  <footer class="footer">
+    <div class="footer-quicklinks">
+      <a href="index.html">Home</a>
+      <a href="whitepaper/">Whitepaper</a>
+      <a href="#introduction">Introduction</a>
+      <a href="#token-overview">Token Overview</a>
+      <a href="#vision">Vision</a>
+      <a href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap" target="_blank" rel="noopener noreferrer">Pump.Fun</a>
+      <a href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd" target="_blank" rel="noopener noreferrer">Dexscreener</a>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">
+        &copy; 2025 $GRATE Token. All rights reserved.
+      </div>
+      <div class="footer-socials">
+        <a href="https://t.me/GrateCoin" target="_blank" rel="noopener noreferrer">
+          <img src="images/tg.png" alt="Telegram Icon" class="link-logo">
+        </a>
+        <a href="https://x.com/GrateToken" target="_blank" rel="noopener noreferrer">
+          <img src="images/x_logo.png" alt="X Icon" class="link-logo">
+        </a>
+      </div>
+    </div>
   </footer>
+  
+  <!-- Auto–Hide Navbar Script -->
+  <script>
+    (function() {
+      let lastScroll = 0;
+      const navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScroll) {
+          navbar.classList.add('hide');
+        } else {
+          navbar.classList.remove('hide');
+        }
+        lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    })();
+  </script>
+  
+  <!-- Share Functionality -->
+  <script>
+    function shareWhitepaperMain() {
+      if (navigator.share) {
+        navigator.share({
+          title: '$GRATE Whitepaper',
+          text: 'Check out the $GRATE Whitepaper!',
+          url: window.location.origin + '/whitepaper/'
+        }).catch(console.error);
+      } else {
+        alert('Share not supported on this browser.');
+      }
+    }
+  </script>
 </body>
 </html>
