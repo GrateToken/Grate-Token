@@ -2,183 +2,194 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>$GRATE Whitepaper | Version 1.0 - February 2025</title>
   <meta name="description" content="Official whitepaper for $GRATE Token, a community-driven project on Solana. Version 1.0 released February 2025." />
-  
-  <!-- Open Graph Tags -->
   <meta property="og:title" content="$GRATE Whitepaper | Version 1.0 - February 2025" />
   <meta property="og:description" content="Official whitepaper for $GRATE Token - a community-driven project on Solana. Version 1.0 released February 2025." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gratetoken.com/whitepaper/" />
   <meta property="og:image" content="https://gratetoken.com/images/grate_logo.jpg" />
-  
-  <!-- Google Fonts -->
+  <!-- Favicon -->
+  <link rel="icon" href="../images/grate_logo.jpg" type="image/jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
-  
-  <!-- External CSS for Whitepaper -->
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <!-- Shared CSS for all pages -->
+  <link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 <body>
   <div class="wrapper">
-    <!-- Navigation Button -->
-<!-- Navigation Button -->
-  <div class="button-row back-btn">
-    <a href="../index.html" class="floating-back-btn">← Back</a>
-  </div>
-
+    <!-- Navbar (Shared) -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="navbar-container">
+        <a class="navbar-brand" href="../index.html">$GRATE</a>
+        <div class="navbar-right">
+          <ul class="nav-menu">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Whitepaper</a></li>
+          </ul>
+          <ul class="nav-icons">
+            <li>
+              <a href="https://x.com/GrateToken" target="_blank" rel="noopener noreferrer">
+                <img src="../images/x_logo.png" alt="X Icon">
+              </a>
+            </li>
+            <li>
+              <a href="https://t.me/GrateCoin" target="_blank" rel="noopener noreferrer">
+                <img src="../images/tg.png" alt="Telegram Icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     
-    <!-- HEADER WITH LOGO -->
-    <header>
-      <img src="../images/grate_logo.jpg" alt="$GRATE Logo">
-      <h1>$GRATE Whitepaper</h1>
-      <p class="version">Version 1.0 - February 2025</p>
+    <!-- Header -->
+    <header style="margin-top: 40px;">
+      <img src="../images/grate_logo.jpg" alt="$GRATE Logo" class="logo" style="max-width:150px; display:block; margin:0 auto 10px;">
+      <h1>📜 $GRATE Whitepaper</h1>
+      <p>Version 1.0 - February 2025</p>
     </header>
     
-    <!-- CONTENT SECTIONS -->
+    <!-- Introduction Section -->
     <section id="introduction">
-      <h2>Introduction</h2>
-      <p>
-        $GRATE is more than just a meme token; it's a movement. Built on the Solana blockchain and launched via Pump.fun, $GRATE is designed to foster a community-driven ecosystem focused on engagement and growth. We make no promises regarding additional utilities, NFTs, or extra features beyond the token itself.
-      </p>
+      <h2>🚀 Introduction</h2>
+      <p>$GRATE is more than just a meme token—it's a movement. Built on the innovative Solana blockchain and launched via Pump.fun, $GRATE is designed to cultivate an engaged, community-driven ecosystem with exciting potential. We’re creating a platform where fun meets forward-thinking innovation, setting the stage for a future of growth and opportunity.</p>
     </section>
     
+    <!-- Token Overview Section -->
     <section id="token-overview">
-      <h2>Token Overview</h2>
-      <div class="two-col">
-        <div class="col">
-          <h3>Name</h3>
-          <p>$GRATE</p>
-        </div>
-        <div class="col">
-          <h3>Blockchain</h3>
-          <p>Solana</p>
-        </div>
-        <div class="col">
-          <h3>Launch Platform</h3>
-          <p>Pump.fun</p>
-        </div>
-        <div class="col">
-          <h3>Total Supply</h3>
-          <p>1 Billion</p>
-        </div>
-        <div class="col">
-          <h3>Current Supply</h3>
-          <p>1 Billion (Pre-Bonding to Raydium)</p>
-        </div>
-        <div class="col">
-          <h3>Developer Holdings</h3>
-          <p>215M $GRATE (21.5% pre-bonding)</p>
-        </div>
-        <div class="col">
-          <h3>Liquidity</h3>
-          <p>To be bonded on Raydium</p>
-        </div>
-        <div class="col">
-          <h3>Contract Address</h3>
-          <p class="contract-address">
-            FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump
-          </p>
-        </div>
-      </div>
+      <h2>💠 Token Overview</h2>
+      <ul>
+        <li><strong>Name:</strong> $GRATE</li>
+        <li><strong>Blockchain:</strong> Solana</li>
+        <li><strong>Launch Platform:</strong> Pump.fun</li>
+        <li><strong>Total Supply:</strong> 1 Billion</li>
+        <li><strong>Current Supply:</strong> 1 Billion (Pre-Bonding to Raydium)</li>
+        <li><strong>Liquidity:</strong> To be bonded on Raydium</li>
+        <li><strong>Contract Address:</strong> <span class="contract-address">FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump</span></li>
+      </ul>
     </section>
     
+    <!-- Vision & Purpose Section -->
     <section id="vision">
-      <h2>Vision &amp; Purpose</h2>
-      <p>
-        Our vision is to build a fair, community-driven token ecosystem that evolves over time. While we focus on balanced token distribution and market stability, we are fully committed to rewarding our community. A portion of funds will be allocated to secure strategic partnerships, marketing, and community growth initiatives. Our milestones are aspirational—starting with modest targets and scaling upward as momentum builds.
-      </p>
+      <h2>💡 Vision &amp; Purpose</h2>
+      <p>Our vision is to build a dynamic, community-powered ecosystem that evolves alongside the aspirations of its holders. We aim to foster a balanced token distribution and market stability—with strategic measures such as locking significant portions of funds over set periods—to ensure long-term growth and innovation.</p>
     </section>
     
-    <section id="release-schedule">
-      <h2>Release &amp; Distribution Schedule</h2>
-      <p><strong>Phase 1: Pre-Bonding (Current)</strong></p>
-      <ul>
-        <li>Deployment on Solana via Pump.fun</li>
-        <li>Community building on X &amp; Telegram</li>
-        <li>Early buy-ins and organic growth</li>
-        <li>Expansion of the liquidity pool toward bonding</li>
-      </ul>
-      <p><strong>Phase 2: Bonding to Raydium (Upcoming)</strong></p>
-      <ul>
-        <li>Liquidity will be locked permanently to support price stability</li>
-        <li>Unbonded tokens will be burned to help reduce inflation</li>
-        <li>Community engagement initiatives will follow bonding</li>
-        <li>Giveaways will be implemented post-bonding based on favorable market performance</li>
-      </ul>
-    </section>
-    
+    <!-- Giveaway Structure Section -->
     <section id="giveaways">
-      <h2>Giveaway Structure &amp; Milestones</h2>
-      <p>
-        We are dedicated to rewarding our community. As the market grows, we will implement ongoing giveaways and rewards that reflect our collective support—without locking in fixed numbers. Early rewards will be introduced as soon as positive market momentum is observed, with further initiatives evolving as the project grows.
-      </p>
+      <h2>🎁 Giveaway Structure &amp; Milestones</h2>
+      <p>We are committed to rewarding our community as we grow. As market momentum builds, we will implement flexible giveaway programs that celebrate our collective support and evolve with the project’s progress.</p>
     </section>
     
-    <section id="token-management">
-      <h2>Post-Bonding Token Management</h2>
-      <dl class="management">
-        <dt>Developer Holdings:</dt>
-        <dd>215M $GRATE (Pre-Bonding)</dd>
-        <dt>Marketing &amp; Partnerships:</dt>
-        <dd>A portion of funds will be allocated to secure strategic partnerships, marketing, and community growth.</dd>
-        <dt>Community Engagement:</dt>
-        <dd>Additional resources will be set aside to reward and support our community after bonding.</dd>
-        <dt>Market Stability &amp; Liquidity:</dt>
-        <dd>Resources will be maintained to support healthy trading and further growth.</dd>
-      </dl>
+    <!-- Community Engagement Section -->
+    <section id="engagement">
+      <h2>🤝 Community Engagement &amp; Collaboration</h2>
+      <p>We believe innovation thrives on dialogue. We are exploring opportunities for live community spaces on X where members can share feedback, suggestions, and ideas. These sessions will serve as a platform for collaboration and help guide the future of $GRATE.</p>
     </section>
     
+    <!-- Security & Sustainability Section -->
     <section id="security">
-      <h2>Security &amp; Sustainability</h2>
-      <dl class="management">
-        <dt>Liquidity Locking:</dt>
-        <dd>Bonding on Raydium ensures a secure liquidity pool.</dd>
-        <dt>Transparent Allocation:</dt>
-        <dd>Our team is committed to clear and open stewardship of token allocation.</dd>
-        <dt>Community Governance:</dt>
-        <dd>Holders will have a say in how funds are spent to grow $GRATE, ensuring decisions benefit the entire community.</dd>
-      </dl>
-    </section>
-    
-    <section id="get-involved">
-      <h2>How to Get Involved</h2>
+      <h2>🔒 Security &amp; Sustainability</h2>
       <ul>
-        <li><strong>Engage:</strong> Join the $GRATE community on social platforms and share your ideas.</li>
-        <li><strong>Buy &amp; Hold:</strong> Support the ecosystem by being an early participant.</li>
-        <li><strong>Spread Awareness:</strong> Help us reach a wider audience through social media engagement.</li>
+        <li><strong>Transparent Allocation:</strong> Our team is dedicated to clear and fair stewardship of token allocation, ensuring that funds are used wisely.</li>
+        <li><strong>Community Governance:</strong> Holders will have a meaningful role in shaping decisions that benefit the entire ecosystem.</li>
       </ul>
     </section>
     
-    <section id="conclusion">
-      <h2>Conclusion</h2>
-      <p>
-        $GRATE is a community-first, incentive-driven token. We are dedicated to building a sustainable, fair token ecosystem driven by community engagement and market stability. While no additional utilities, NFTs, or extra benefits are guaranteed beyond the token itself, we will continuously reward our supporters and reinvest in partnerships, marketing, and community growth. Our milestones—starting modestly and scaling upward—are aspirational and flexible, reflecting our commitment to progress.
-      </p>
-      <p>
-        The future of $GRATE is in the hands of its holders—together, we will make it thrive.
-      </p>
-      <p>
-        🚀 Follow us on <a href="https://x.com/GrateToken" target="_blank" rel="noopener noreferrer">X</a> | 🌐 Visit our <a href="https://gratetoken.com" target="_blank" rel="noopener noreferrer">Website</a>
-      </p>
-      <p class="disclaimer">
-        Disclaimer: This whitepaper is for informational purposes only and is not legally binding. The project team reserves the right to update this document as the project evolves.
-      </p>
+    <!-- Future Prospects Section -->
+    <section id="future">
+      <h2>🌟 Future Prospects</h2>
+      <p>The potential for $GRATE is vast. We envision the future introduction of more advanced assets and smart contracts that could expand the utility of our tokens. The original Pump.fun $GRATE tokens are designed to offer highly rewarding staking properties—making them a valuable long-term foundation for what may evolve into a significantly larger ecosystem. These possibilities are speculative and subject to change, but they underscore the exciting vision ahead.</p>
     </section>
     
-    <!-- PDF DOWNLOAD SECTION -->
-    <section id="download">
-      <div class="button-row download-btn">
-        <a href="whitepaper_v1.0.pdf" download class="btn">Download PDF</a>
+    <!-- How to Get Involved Section -->
+    <section id="get-involved">
+      <h2>🚀 How to Get Involved</h2>
+      <ul>
+        <li><strong>Engage:</strong> Join our community on social platforms to share your ideas and feedback.</li>
+        <li><strong>Buy &amp; Hold:</strong> Support the ecosystem as an early participant and long-term holder.</li>
+        <li><strong>Spread Awareness:</strong> Help us amplify our message through active social media engagement.</li>
+      </ul>
+    </section>
+    
+    <!-- Conclusion Section -->
+    <section id="conclusion">
+      <h2>🏆 Conclusion</h2>
+      <p>$GRATE is a community-first, incentive-driven token poised to become the cornerstone of a much larger project. We are dedicated to building a sustainable ecosystem that continuously rewards its supporters and evolves with the times.</p>
+      <br>
+      <p>Follow us on <a href="https://x.com/GrateToken" target="_blank" rel="noopener noreferrer">X</a> | Visit our <a href="https://gratetoken.com" target="_blank" rel="noopener noreferrer">Website</a></p>
+      <br>
+      <p class="disclaimer">Disclaimer: This whitepaper is for informational purposes only and is not legally binding. The project team reserves the right to update this document as the project evolves.</p>
+    </section>
+    
+    <!-- Actions Section -->
+    <section id="actions">
+      <div class="button-row">
+        <a href="whitepaper_v1.0.pdf" download class="btn">📥 Download PDF</a>
+        <button class="btn share-btn" onclick="shareWhitepaper()">🔗 Share</button>
       </div>
     </section>
     
-    <!-- FOOTER -->
+    <!-- Footer (Unified for all pages) -->
     <footer class="footer">
-      &copy; 2025 $GRATE Token. All rights reserved.
+      <div class="footer-quicklinks">
+        <a href="index.html">Home</a>
+        <a href="whitepaper/">Whitepaper</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#token-overview">Token Overview</a>
+        <a href="#vision">Vision</a>
+        <a href="https://pump.fun/coin/FKVYQSkLdg5hYxxPwxFW7JrTVu6eq2sJLstd9HHppump?coin_sort=market_cap" target="_blank" rel="noopener noreferrer">Pump.Fun</a>
+        <a href="https://dexscreener.com/solana/j76zmuuffdewfmo8tnvywpbth32dqxngwrugbldntsrd" target="_blank" rel="noopener noreferrer">Dexscreener</a>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2025 $GRATE Token. All rights reserved.
+        </div>
+        <div class="footer-socials">
+          <a href="https://t.me/GrateCoin" target="_blank" rel="noopener noreferrer">
+            <img src="images/tg.png" alt="Telegram Icon" class="link-logo">
+          </a>
+          <a href="https://x.com/GrateToken" target="_blank" rel="noopener noreferrer">
+            <img src="images/x_logo.png" alt="X Icon" class="link-logo">
+          </a>
+        </div>
+      </div>
     </footer>
   </div>
+  
+  <!-- Auto–Hide Navbar Script -->
+  <script>
+    (function() {
+      let lastScroll = 0;
+      const navbar = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        if (currentScroll > lastScroll) {
+          navbar.classList.add('hide');
+        } else {
+          navbar.classList.remove('hide');
+        }
+        lastScroll = currentScroll <= 0 ? 0 : currentScroll;
+      });
+    })();
+  </script>
+  
+  <!-- Share Functionality -->
+  <script>
+    function shareWhitepaperMain() {
+      if (navigator.share) {
+        navigator.share({
+          title: '$GRATE Whitepaper',
+          text: 'Check out the $GRATE Whitepaper!',
+          url: window.location.origin + '/whitepaper/'
+        }).catch(console.error);
+      } else {
+        alert('Share not supported on this browser.');
+      }
+    }
+  </script>
 </body>
 </html>
